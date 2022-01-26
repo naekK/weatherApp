@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(255deg, #100045, #2200FF, #4DFF00, #F400FF, #FF0000);
+    background-size: 1000% 1000%;
+    animation: GradientBackground 32s ease infinite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+.headertext-section,
+.location-section,
+.temperature-section {
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.headertext-section {
+    flex-direction: column;
+}
+
+.headertext-location {
+    font-size: 2em;
+}
+
+.today-weather {
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature-description {
+    text-align: center;
+}
+
+.sub-information {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.humidity-section,
+.hp-section {
+    display: flex;
+    width: 25%;
+    min-width: 150px;
+    border: solid 1px #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.humidity-section {
+    border-radius: 10px 10px 0 0;
+}
+
+.hp-section {
+    border-radius: 0 0 10px 10px;
+}
+
+
+.humidity-section span,
+.hp-section span {
+    margin: 10px;
+}
+
+.humidity-description,
+.hp-description,
+.temperature-digree {
+    margin: 14px 0 14px 14px;
+}
+
+.temperature-section {
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+
+.digree-section,
+.digree-section-min,
+.digree-section-max {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.digree-section {
+    border-right: solid 1px #fff;
+}
+
+.digree-section-min-max {
+    flex-direction: column;
+    margin-left: 14px;
+}
+
+.digree-section-min,
+.digree-section-max {
+    font-size: 1rem;
+}
+
+.digree-section span {
+    margin: 10px 20px 10px 10px;
+    font-size: 1rem;
+}
+
+.digree-section-min span,
+.digree-section-max span {
+    margin: 5px 10px;
+    font-size: 0.5rem;
+}
+
+.weather-icon {
+    margin: 3em;
+    width: 6em;
+    height: 6em;
+}
+
+.time-section {
+    font-size: 1.6em;
+}
+
+.temperature-max,
+.temperature-min {
+    font-size: 10px;
+    margin: 5px 0 5px 14px;
+}
+
+
+
+
+@keyframes GradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+};
+

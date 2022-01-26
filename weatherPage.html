@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="icon" href="data:,">
+        <title>現在地の天気</title>
+    </head>
+    <body>
+        <div class="headertext-section">
+            <p class="headertext-gettime">2022/1/1 9:00</p>
+            <h2 class="headertext-location">Location</h2>
+        </div>
+
+        <div class="location-section">
+            <div class="today-weather">
+                <canvas class="weather-icon" width="128" height="128"></canvas>
+                <div class="temperature-description">晴れ時々雪</div>    
+            </div>
+            <div class="sub-information">
+                <div class="humidity-section">
+                    <h3 class="humidity-description">湿度</h3>
+                    <span>%</span>
+                </div>
+                <div class="hp-section">
+                    <h3 class="hp-description">気圧</h3>
+                    <span>hp</span>
+                </div>    
+            </div>
+        </div>
+        <div class="temperature-section">
+            <div class="digree-section">
+                <h2 class="temperature-digree">5</h2>
+                <span>C</span>    
+            </div>
+            <div class="digree-section-min-max">
+                <div class="digree-section-min">
+                    <h3 class="temperature-min">最低気温</h3><span>C</span>
+                </div>
+                <div class="digree-section-max">
+                    <h3 class="temperature-max">最高気温</h3><span>C</span>
+                </div>                    
+            </div>
+        </div>
+
+        
+
+        <script src="./js/jquery.js"></script>
+        <script src="./js/getWeather.js"></script>
+        <script src="./js/skycons.js"></script>
+    </body>
+</html>
