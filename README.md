@@ -9,7 +9,7 @@
 
 
 ## デモ
-![デモ](https://test.queseratech.net/weatherPage.html)
+[デモ](https://test.queseratech.net/weatherPage.html)
 
 ## 注意点
 openWeatherCall.phpはリポジトリに含んでいません
